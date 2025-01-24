@@ -1,0 +1,251 @@
+.contact-container {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(139, 69, 19, 0.05), rgba(139, 69, 19, 0.1));
+  min-height: calc(100vh - 60px);
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-info {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h1 {
+  color: #8b4513;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.info-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-item .icon {
+  font-size: 24px;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(139, 69, 19, 0.1);
+  border-radius: 50%;
+}
+
+.info-item .text {
+  flex: 1;
+}
+
+.info-item h3 {
+  color: #8b4513;
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+}
+
+.info-item p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95em;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: rgba(139, 69, 19, 0.05);
+  border: 1px solid rgba(139, 69, 19, 0.1);
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+  fill: #666;
+}
+
+/* Facebook */
+.social-link.facebook:hover {
+  background: #1877f2;
+  border-color: #1877f2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.2);
+  color: white;
+}
+
+.social-link.facebook:hover .social-icon svg {
+  fill: white;
+}
+
+/* Instagram */
+.social-link.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: #e1306c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(225, 48, 108, 0.2);
+  color: white;
+}
+
+.social-link.instagram:hover .social-icon svg {
+  fill: white;
+}
+
+/* Twitter */
+.social-link.twitter:hover {
+  background: #1da1f2;
+  border-color: #1da1f2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(29, 161, 242, 0.2);
+  color: white;
+}
+
+.social-link.twitter:hover .social-icon svg {
+  fill: white;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-form {
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  color: #8b4513;
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8b4513;
+  box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.1);
+}
+
+.submit-btn {
+  background: #8b4513;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #6b3410;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .info-item .text {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .social-link {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container {
+    padding: 40px 15px;
+  }
+
+  .contact-info h1 {
+    font-size: 2em;
+  }
+
+  .contact-form h2 {
+    font-size: 1.8em;
+  }
+
+  .info-item {
+    padding: 15px;
+  }
+}
